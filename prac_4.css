@@ -1,0 +1,113 @@
+td
+{
+    border: 1px solid #000;
+}
+th
+{
+    border: 1px solid #000;
+    background-color: rgb(129, 200, 255);
+}
+table
+{
+    border-collapse: collapse;
+}
+table tr:hover
+{
+    background-color: #ff0;
+}
+tr:nth-child(even)
+{
+    background-color: #ccc;
+}
+button
+{
+    cursor: pointer;
+    display: none;
+}
+form:has(input[type="tel"]:valid):has(input[type="email"]:valid) button {
+      display: block;
+    }
+button:hover {
+    background-color: #ff0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    gap: 10px;
+}
+
+.part_day
+{
+    text-decoration: underline;
+    display: flex;
+    height: 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+.day
+{
+    text-decoration: underline;
+    display: flex;
+    height: 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+.category
+{
+    text-decoration: underline;
+    display: flex;
+    height: 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.theme-label
+{
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}
+body:has(#theme-switcher:checked) tr:nth-child(even)
+{
+    background-color: rgb(0, 0, 0);
+}
+body:has(#theme-switcher:checked) {
+  background-color: #444444;
+  color: #e0e0e0;
+}
+body:has(#theme-switcher:checked) th {
+    background-color: rgb(0, 131, 174);
+  border-color: #000;
+}
+body:has(#theme-switcher:checked) td
+{
+    border-color: #000;
+}
+body:has(#theme-switcher:checked) tr:not(:first-child):hover
+{
+    background-color: rgb(201, 0, 0);
+}
+
+table tbody tr {
+  display: table-row; /* по умолчанию все строки видимы */
+}
+
+/* Дни */
+body:has(#weekday:checked) table tbody tr:not(.weekday),
+body:has(#weekend:checked) table tbody tr:not(.weekend) {
+  display: none;
+}
+
+/* Частина дня */
+body:has(#first:checked) table tbody tr:not(.morning),
+body:has(#second:checked) table tbody tr:not(.afternoon) {
+  display: none;
+}
+
+/* Категорія */
+body:has(#category[value="вища"]:checked) table tbody tr:not(.cat-high),
+body:has(#category[value="перша"]:checked) table tbody tr:not(.cat-first),
+body:has(#category[value="друга"]:checked) table tbody tr:not(.cat-second) {
+  display: none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak_4</title>
+    <link rel="stylesheet" href="prac_4.css">
+</head>
+<body>
+<div class="switch">
+  <input type="checkbox" id="theme-switcher" hidden>
+    <label for="theme-switcher" class="theme-label">🌓</label>
+</div>
+
+<div class="part_day">
+  <input type="radio" name="part_day" id="first"> Перша половина
+  <input type="radio" name="part_day" id="second"> Друга половина
+  <input type="radio" name="part_day" id="all"> Всі
+</div>
+<div class="day">
+  <input type="radio" name="day" id="weekday"> Будні
+  <input type="radio" name="day" id="weekend"> Вихідні
+  <input type="radio" name="day" id="all"> Всі
+</div>
+<div class="category">
+  <input type="radio" name="category" id="category" value="вища"> Вища
+  <input type="radio" name="category" id="category" value="перша"> Перша
+  <input type="radio" name="category" id="category" value="друга"> Друга
+  <input type="radio" name="category" checked> Усі
+</div>
+<table>
+  <tr>
+    <th>Спеціальність</th>
+    <th>ПІБ</th>
+    <th>Рівень фахівця</th>
+    <th>Номер кабінету</th>
+    <th>Години прийому</th>
+  </tr>
+  <tr class="weekday morning cat-high">
+  <td>Терапевт</td>
+  <td>Іваненко Ірина Олександрівна</td>
+  <td>Вища</td>
+  <td>101</td>
+  <td>08:00–12:00 (Будні)</td>
+</tr>
+<tr class="weekday afternoon cat-first">
+  <td>Хірург</td>
+  <td>Петренко Павло Петрович</td>
+  <td>Перша</td>
+  <td>203</td>
+  <td>12:00–16:00 (Будні)</td>
+</tr>
+<tr class="weekend morning cat-second">
+  <td>Стоматолог</td>
+  <td>Коваленко Катерина Кирилівна</td>
+  <td>Друга</td>
+  <td>115</td>
+  <td>09:00–13:00 (Вихідні)</td>
+</tr>
+<tr class="weekend afternoon cat-high">
+  <td>Офтальмолог</td>
+  <td>Сидоренко Сергій Сергійович</td>
+  <td>Вища</td>
+  <td>107</td>
+  <td>14:00–18:00 (Вихідні)</td>
+</tr>
+<tr class="weekday morning cat-first">
+  <td>Педіатр</td>
+  <td>Мельник Марія Вікторівна</td>
+  <td>Перша</td>
+  <td>205</td>
+  <td>08:00–12:00 (Будні)</td>
+</tr>
+<tr class="weekday afternoon cat-second">
+  <td>Невролог</td>
+  <td>Гриценко Андрій Ігорович</td>
+  <td>Друга</td>
+  <td>305</td>
+  <td>12:00–16:00 (Будні)</td>
+</tr>
+<tr class="weekend morning cat-high">
+  <td>ЛОР</td>
+  <td>Демченко Олена Іванівна</td>
+  <td>Вища</td>
+  <td>214</td>
+  <td>08:00–12:00 (Вихідні)</td>
+</tr>
+<tr class="weekday afternoon cat-first">
+  <td>Кардіолог</td>
+  <td>Тарасенко Михайло Михайлович</td>
+  <td>Перша</td>
+  <td>109</td>
+  <td>14:00–18:00 (Будні)</td>
+</tr>
+<tr class="weekday morning cat-second">
+  <td>Дерматолог</td>
+  <td>Кравчук Лілія Анатоліївна</td>
+  <td>Друга</td>
+  <td>307</td>
+  <td>09:00–13:00 (Будні)</td>
+</tr>
+<tr class="weekend afternoon cat-first">
+  <td>Ендокринолог</td>
+  <td>Романенко Дмитро Олегович</td>
+  <td>Перша</td>
+  <td>118</td>
+  <td>12:00–16:00 (Вихідні)</td>
+</tr>
+<tr class="weekday morning cat-high">
+  <td>Гінеколог</td>
+  <td>Шевченко Валентина Василівна</td>
+  <td>Вища</td>
+  <td>215</td>
+  <td>08:00–12:00 (Будні)</td>
+</tr>
+<tr class="weekend afternoon cat-first">
+  <td>Ортопед</td>
+  <td>Бондаренко Роман Степанович</td>
+  <td>Перша</td>
+  <td>222</td>
+  <td>14:00–18:00 (Вихідні)</td>
+</tr>
+<tr class="weekday morning cat-second">
+  <td>Психолог</td>
+  <td>Захарченко Аліна Дмитрівна</td>
+  <td>Друга</td>
+  <td>412</td>
+  <td>08:00–12:00 (Будні)</td>
+</tr>
+<tr class="weekday afternoon cat-high">
+  <td>УЗД-спеціаліст</td>
+  <td>Мороз Юрій Сергійович</td>
+  <td>Вища</td>
+  <td>119</td>
+  <td>12:00–16:00 (Будні)</td>
+</tr>
+<tr class="weekend morning cat-first">
+  <td>Онколог</td>
+  <td>Клименко Оксана Іванівна</td>
+  <td>Перша</td>
+  <td>303</td>
+  <td>09:00–13:00 (Вихідні)</td>
+</tr>
+</table>
+<form action="">
+  <label for="phone">Номер телефону:</label>
+    <input type="tel" name="" id="" placeholder="123-456-356" pattern="\d{3}-\d{3}-\d{3}" required> 
+  <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+  <button type="button" id="send">Надіслати дані на телефон</button>
+</form>
+</body>
+</html>
